@@ -305,6 +305,7 @@
 			<id>deploywhcl</id>
 			<properties>
 				<skipTests>true</skipTests>
+				<maven.war.webxml>${basedir}/src/config/web.xml</maven.war.webxml>
 			</properties>
 			<build>
 				<plugins>
@@ -372,12 +373,12 @@
 							<configuration>
 								<configfiles>
 									<configfile>
-										<file>${basedir}/src/config/local/server.xml</file>
+										<file>${basedir}/src/config/${runenv}/server.xml</file>
 										<todir>conf</todir>
 										<overwrite>true</overwrite>
 									</configfile>
 									<configfile>
-										<file>${basedir}/src/config/local/context.xml</file>
+										<file>${basedir}/src/config/${runenv}/context.xml</file>
 										<todir>conf</todir>
 										<overwrite>true</overwrite>
 									</configfile>
