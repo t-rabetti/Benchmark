@@ -361,7 +361,7 @@
 						<artifactId>cargo-maven2-plugin</artifactId>
 						<configuration>
 							<container>
-								<timeout>400000</timeout>
+								<timeout>1200000</timeout>
 								<containerId>tomcat${tomcat.major.version}x</containerId>
 								<zipUrlInstaller>
 									<url>${tomcat.url}</url>
